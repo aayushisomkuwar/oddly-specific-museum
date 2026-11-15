@@ -1,0 +1,54 @@
+:root {
+  --dark: #2a0e42;
+  --cream: #542177;      /* page background */
+  --paper: #43195f;      /* inputs, chips, cream cards (slightly darker purple) */
+  --ink: #bedeff;        /* text, borders, shadows */
+  --dark: #2a0e42;       /* text on pink/mint surfaces, ticker, footer */
+  --cobalt: #d552a3;     /* pink: main buttons, CTA band, tone cards */
+  --lavender: #d552a3;   /* pink: stat band, tone cards */
+  --yellow: #98e8de;     /* mint highlights: Surprise button, ticker text */
+  --coral: #bedeff;      /* underlines, 404 number, curator line */
+  --display: 'Bricolage Grotesque', 'Arial Black', system-ui, sans-serif;
+  --body: 'Newsreader', Georgia, serif;
+  --pad: clamp(1rem, 4vw, 3rem);
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 1.125rem;
+  line-height: 1.55;
+  overflow-x: clip;
+}
+h1, h2, h3 { font-family: var(--display); font-weight: 800; line-height: 1; margin: 0; letter-spacing: -0.02em; }
+p { margin: 0; }
+a { color: inherit; }
+img, svg { max-width: 100%; }
+main { min-height: 70vh; }
+
+:focus-visible { outline: 3px solid var(--cobalt); outline-offset: 3px; }
+.skip-link { position: absolute; left: -999px; top: 0; background: var(--ink); color: var(--paper); padding: .75rem 1rem; z-index: 100; }
+.skip-link:focus { left: 0; }
+
+.btn {
+  display: inline-flex; align-items: center; gap: .5rem;
+  font: 700 1rem var(--display);
+  padding: .8rem 1.2rem;
+  border: 2.5px solid var(--ink);
+  border-radius: 999px;
+  cursor: pointer; text-decoration: none; color: var(--ink);
+  box-shadow: 4px 4px 0 var(--ink);
+  transition: transform .15s, box-shadow .15s;
+}
+.btn:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--ink); }
+.btn:active { transform: translate(3px, 3px); box-shadow: 1px 1px 0 var(--ink); }
+.btn-blue { background: var(--cobalt); color: var(--paper); }
+.btn-yellow { background: var(--yellow); }
+.btn-cream { background: var(--paper); }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
