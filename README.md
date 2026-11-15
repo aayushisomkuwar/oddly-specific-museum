@@ -5,6 +5,8 @@
 🔗 **Live Website:** [oddly-specific-museum.vercel.app](https://oddly-specific-museum.vercel.app/)
 
 ---
+<img width="1896" height="898" alt="image" src="https://github.com/user-attachments/assets/28f5e27f-c059-4c87-9421-ea9159b8acdc" />
+<img width="1892" height="902" alt="image" src="https://github.com/user-attachments/assets/b7a7ecf1-19cb-4a95-8a02-056249a7fd95" />
 
 ## ✨ About the Project
 
